@@ -1,6 +1,8 @@
+import { DarkOnlyPage } from "@/app/ui/theme/darkmode";
+
 export default function Users() {
   return (
-    <main className='flex min-h-screen bg-sky-300 '>
+    <main className={`flex min-h-screen ${DarkOnlyPage}`}>
       <h2>Users</h2>
     </main>
   )

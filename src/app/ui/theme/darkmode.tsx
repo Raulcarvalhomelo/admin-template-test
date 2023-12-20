@@ -1,5 +1,7 @@
+
+
 interface darkmodeProps {
-  darkMode?: boolean
+  darkMode?: string
   darkButton?: boolean
   darkonlypage?: boolean
 }
@@ -13,4 +15,7 @@ export function DarkButton({ darkButton }: darkmodeProps) {
 export function DarkOnlyPage({ darkonlypage }: darkmodeProps) {
   return darkonlypage ? "dark dark:bg-gray-700 dark:text-white dark:border-black": ''
 }
+ 
+
+
 

@@ -1,8 +1,8 @@
 
 import Link from 'next/link';
 import Navlinks from '@/app/ui/dashboard/nav-links';
-import { DarkMode } from '@/app/ui/darkmode';
-import { ArrowRightEndOnRectangleIcon } from '@heroicons/react/24/solid';
+import { DarkMode } from '@/app/ui/theme/darkmode';
+import {MdOutlineExitToApp } from "react-icons/md";
 
 
 export default function SideNav() {
@@ -16,14 +16,14 @@ export default function SideNav() {
         </div>
       </Link>
       <div className={`flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2 ${DarkMode}`}>
-        {/* <Navlinks /> */}
-        <Navlinks name="Usuários" href="/dashboard/users" icon='UserIcon' >users</Navlinks>
-        <Navlinks name="Grupos" href="/dashboard/groups" icon='UserGroupIcon'>Groups</Navlinks>
-        <Navlinks name="Configurações" href="/dashboard/settings" icon='WrenchIcon' >Setting</Navlinks>
+        <Navlinks name='Dashboard' href='/dashboard' icon='DashboardIcon'></Navlinks>
+        <Navlinks name='Usuários' href='/dashboard/users' icon='UserIcon'></Navlinks>
+        <Navlinks name='Grupo' href='/dashboard/groups' icon='UserGroupIcon'></Navlinks>
+        <Navlinks name='Configurações' href='/dashboard/settings' icon='WrenchIcon'></Navlinks>
         <div className={`hidden h-auto w-full grow rounded-md bg-gray-50 md:block ${DarkMode}`}></div>
         <form>
           <button className={`flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md dark:bg-gray-800 dark:hover:text-gray-500 bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3`}>
-            <ArrowRightEndOnRectangleIcon className="w-6" />
+            <MdOutlineExitToApp className="w-6" />
             <div className="hidden md:block">Sair</div>
           </button>
         </form>

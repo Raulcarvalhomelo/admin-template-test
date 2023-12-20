@@ -1,4 +1,4 @@
-import { DarkMode } from "../ui/darkmode";
+import { DarkMode } from "../ui/theme/darkmode";
 
 export default function Dashboard() {
   return (
