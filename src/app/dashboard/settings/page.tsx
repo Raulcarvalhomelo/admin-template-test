@@ -1,4 +1,4 @@
-import { DarkOnlyPage } from "@/app/ui/theme/darkmode";
+import { DarkOnlyPage } from "@/app/components/darkmode";
 
 export default function Settings() {
   return (

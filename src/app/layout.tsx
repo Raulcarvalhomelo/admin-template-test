@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-
+import { DarkWrapper, } from './contexts/darktheme'
 
 export const metadata: Metadata = {
   title: 'Website',
@@ -13,8 +13,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`font-arial`}>{children}</body>
-    </html>
+    <DarkWrapper>
+      <html lang="pt-br">
+        <body className={`font-arial`}>{children}</body>
+      </html>
+    </DarkWrapper>
   )
 }

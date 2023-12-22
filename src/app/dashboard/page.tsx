@@ -1,9 +1,13 @@
-import { DarkMode } from "../ui/theme/darkmode";
+"use client";
 
-export default function Dashboard() {
+import { useDarkContext } from "../contexts/darktheme";
+
+export default function  Dashboard() {
+  const { theme } = useDarkContext()
+
   return (
-    <main className={`flex min-h-screen ${DarkMode}`}>
-      <h2>dashboard</h2>
-    </main>
+      <main className={`${theme} flex min-h-screen `}>
+        <h1>dashboard</h1>
+      </main>
   )
 }

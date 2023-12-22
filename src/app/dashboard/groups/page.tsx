@@ -1,9 +1,11 @@
-import { DarkOnlyPage } from "@/app/ui/theme/darkmode";
+"use client";
+import { DarkOnlyPage } from "@/app/components/darkmode";
+import { useDarkContext } from "@/app/contexts/darktheme";
 
 export default function Groups() {
   return (
     <main className={`flex min-h-screen ${DarkOnlyPage}`}>
-      <h2>Groups</h2>
+      <h1>Groups</h1>
     </main>
   )
 }

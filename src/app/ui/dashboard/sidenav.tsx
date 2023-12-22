@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 import Navlinks from '@/app/ui/dashboard/nav-links';
-import { DarkMode } from '@/app/ui/theme/darkmode';
+import { DarkMode } from '@/app/components/darkmode';
 import {MdOutlineExitToApp } from "react-icons/md";
 
 
@@ -22,7 +22,7 @@ export default function SideNav() {
         <Navlinks name='Configurações' href='/dashboard/settings' icon='WrenchIcon'></Navlinks>
         <div className={`hidden h-auto w-full grow rounded-md bg-gray-50 md:block ${DarkMode}`}></div>
         <form>
-          <button className={`flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md dark:bg-gray-800 dark:hover:text-gray-500 bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3`}>
+          <button className={`flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md dark:bg-sky-950 dark:hover:bg-sky-800  dark:hover:text-white bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3`}>
             <MdOutlineExitToApp className="w-6" />
             <div className="hidden md:block">Sair</div>
           </button>
