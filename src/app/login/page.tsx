@@ -6,7 +6,7 @@ import { useDarkContext } from "../contexts/darktheme";
 import Image from "next/image";
 
 
-export default function login () {
+export default function Login () {
   const { theme } = useDarkContext();
   const [modo, setModo] = useState<'login'|'cadastro'>('login');
   const [email, setEmail] = useState('');
