@@ -14,7 +14,7 @@ export default function Login () {
   const profileimage=['https://cdn-icons-png.flaticon.com/512/149/149071.png','https://cdn-icons-png.flaticon.com/512/720/720255.png'];
   
   return (
-    <div className={` ${theme}${DarkMode} flex flex-col h-screen md:bg-block bg-gradient-to-br from-white to-black bg-opacity-25  object-cover  justify-center items-center `}>
+    <div className={`${theme}${DarkMode} flex flex-col h-screen md:bg-block bg-gradient-to-br from-white to-black bg-opacity-25  object-cover  justify-center items-center `}>
       <div className={`${DarkOnlyPage} flex flex-col shadow-[1px_5px_5px_2px_rgba(0,0,0,0.9)] shadow-gray-900 gap-y-4 p-5 rounded-lg justify-center items-center bg-white`}>
         {/* <img className="float-left w-1/3 h-1/6" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="" /> */}
         <Image className="float-left" width={50} height={50} src={profileimage[0]} alt="profile image" />
