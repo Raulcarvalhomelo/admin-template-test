@@ -5,7 +5,6 @@ export default function Home() {
   <>
       <main>
         <Login/>
-        <h2>admin</h2>
       </main>
   </>
   )

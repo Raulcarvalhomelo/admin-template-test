@@ -13,10 +13,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <DarkWrapper>
-      <html lang="pt-br">
-        <body className={`font-arial`}>{children}</body>
+    <html lang="pt-br">
+        <body className={`font-arial`}>
+        <DarkWrapper>
+          {children}
+        </DarkWrapper>
+          </body>
       </html>
-    </DarkWrapper>
   )
 }
