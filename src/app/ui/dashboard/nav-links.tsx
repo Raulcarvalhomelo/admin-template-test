@@ -36,7 +36,7 @@ export default function Navlinks({ name, href, icon }: NavlinksProps) {
     href={href}
     className={clsx(`${DarkButton}`,'flex h-[48px] grow items-center justify-center gap-2 rdark:bg-slate-900 dark:text-cyan-100 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3 ',
       {
-        'bg-sky-100 text-blue-600 dark:bg-sky-600 ': pathname === href
+        'bg-sky-100 text-blue-600 dark:bg-sky-500 ': pathname === href
       },
     )}
     >
