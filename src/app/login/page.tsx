@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import AuthInput from "../components/auth/AuthInput";
 import { FcNoIdea,FcIdea } from "react-icons/fc";
 
@@ -29,7 +29,7 @@ export default function Login () {
           <Image className="w-8 hover:opacity-80" width={30} height={30} src={profileimage[1]} alt="GoogleLogin" />
         </button>
         <div className="flex">
-          <button className="flex-none w-14 ">{loginDark==='dark'?(<FcNoIdea onClick={()=>setLoginDark('ligth')}/>):(<FcIdea onClick={()=>setLoginDark('dark')}/>)}dark</button>
+          <button className="flex-none w-14  ">{loginDark==='dark'?(<FcIdea onClick={()=>setLoginDark('ligth')}/>):(<FcNoIdea onClick={()=>setLoginDark('dark')}/>)}</button>
           <p className="grid justify-items-end  -full text-xs">
           {modo==='login'?(
               <p>Novo por aqui?
