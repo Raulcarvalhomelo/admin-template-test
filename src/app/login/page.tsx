@@ -6,9 +6,11 @@ import { AiOutlineWarning } from "react-icons/ai";
 import { DarkMode, DarkOnlyPage } from "../components/darkmode";
 import Image from "next/image";
 import { error } from "console";
+import UseAuth from "../hooks/useAuth";
 
 
 export default function Login () {
+  const {user,loginGoogle}=UseAuth();
   const [erro,setErro]=useState<'hidden'|''>('hidden')
   const [loginDark,setLoginDark]=useState<'dark'|'ligth'>('ligth')
   const [modo, setModo] = useState<'login'|'cadastro'>('login');
@@ -51,7 +53,7 @@ export default function Login () {
           <Image className="w-8 hover:opacity-80" width={30} height={30} src={profileimage[1]} alt="GoogleLogin" />
         </button>
         <div className="flex">
-          <button className="flex-none w-14  ">{loginDark==='dark'?(<FcIdea onClick={()=>setLoginDark('ligth')}/>):(<FcNoIdea onClick={()=>setLoginDark('dark')}/>)}</button>
+          <button onClick={loginGoogle} className="flex-none w-14  ">{loginDark==='dark'?(<FcIdea onClick={()=>setLoginDark('ligth')}/>):(<FcNoIdea onClick={()=>setLoginDark('dark')}/>)}</button>
           <p className="grid justify-items-end  -full text-xs">
           {modo==='login'?(
               <p>Novo por aqui?

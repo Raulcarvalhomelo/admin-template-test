@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { DarkWrapper, } from './contexts/darktheme'
+import { Authprovider } from './contexts/AuthContext'
 
 export const metadata: Metadata = {
   title: 'Website',
@@ -15,9 +16,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
         <body className={`font-arial`}>
-        <DarkWrapper>
-          {children}
-        </DarkWrapper>
+        <Authprovider>
+          <DarkWrapper>
+            {children}
+          </DarkWrapper>
+        </Authprovider>
           </body>
       </html>
   )
